@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,10 +10,12 @@ const Navbar = () => {
         <span className="text-[#075985]">Man/&gt;</span>
       </div>
 
-      <button className="text-[#3f3f46] hover:text-[#71717a] flex justify-center items-center gap-1 outline outline-2 outline-offset-2 rounded-lg font-bold px-2 ">
-        <FaGithub className=" fill-[#3f3f46]   hover:fill-[#3f3f46]" />
-        <span>Github</span>
-      </button>
+      <Link to="https://github.com/YooShijin/PassMan">
+        <button className="text-[#3f3f46] hover:text-[#71717a] flex justify-center items-center gap-1 outline outline-2 outline-offset-2 rounded-lg font-bold px-2 ">
+          <FaGithub className=" fill-[#3f3f46]   hover:fill-[#3f3f46]" />
+          <span>Github</span>
+        </button>
+      </Link>
     </nav>
   );
 };
